@@ -1,2 +1,2 @@
 # brainfuck.js
-Interpreter for the Brainfuck language
+Interpreter for the Brainfuck language.
