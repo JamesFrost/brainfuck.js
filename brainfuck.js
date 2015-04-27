@@ -28,7 +28,7 @@ BrainfuckParser.prototype._60 = function() { --this.dataPointer; };
 BrainfuckParser.prototype._43 = function() { ++this.byteCells[this.dataPointer]; this.byteCells[this.dataPointer] = this.validateByte(this.byteCells[this.dataPointer]); };
 BrainfuckParser.prototype._45 = function() { --this.byteCells[this.dataPointer]; this.byteCells[this.dataPointer] = this.validateByte(this.byteCells[this.dataPointer]); };
 BrainfuckParser.prototype._46 = function() { this.output += String.fromCharCode(this.byteCells[this.dataPointer]); };
-BrainfuckParser.prototype._44 = function() { this.byteCells[this.dataPointer] = this.input.shift().charCodeAt(); console.log(this.byteCells[this.dataPointer]); };
+BrainfuckParser.prototype._44 = function() { this.byteCells[this.dataPointer] = this.input.shift().charCodeAt(); };
 
 BrainfuckParser.prototype._91 = function() 
 { 
