@@ -1,0 +1,25 @@
+{
+  "name": "brainfuck.js",
+  "version": "1.1.0",
+  "homepage": "https://github.com/jamesfrost/brainfuck.js",
+  "authors": [
+    "James Frost <hello@jamesfrost.me>"
+  ],
+  "description": "Interpreter for the Brainfuck language",
+  "main": "src/brainfuck.js",
+  "keywords": [
+    "brainfuck",
+    "interpreter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "qunit": "https://github.com/jquery/qunit.git#~1.18.0"
+  }
+}

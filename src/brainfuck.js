@@ -32,11 +32,11 @@ BrainfuckParser.prototype._44 = function() { this.byteCells[this.dataPointer] = 
 
 BrainfuckParser.prototype._91 = function() 
 { 
-	if(this.byteCells[this.dataPointer] != 0)
+	if(this.byteCells[this.dataPointer] !== 0)
 		return;
 
 	var bracketStack = [this.instructionPointer];
-	while(bracketStack.length != 0)
+	while(bracketStack.length !== 0)
 	{
 		++this.instructionPointer;
 
@@ -56,11 +56,11 @@ BrainfuckParser.prototype._91 = function()
 
 BrainfuckParser.prototype._93 = function() 
 { 
-	if(this.byteCells[this.dataPointer] == 0)
+	if(this.byteCells[this.dataPointer] === 0)
 		return;
 
 	var bracketStack = [this.instructionPointer];
-	while(bracketStack.length != 0)
+	while(bracketStack.length !== 0)
 	{
 		--this.instructionPointer;
 
@@ -91,7 +91,9 @@ BrainfuckParser.prototype.parse = function(code, input)
 {
 	this.reset();
 	this.code = code.trim().replace(/ /g, "").replace(/(\r\n|\n|\r)/gm,"").split("");
-	this.input = input.split("");
+
+	if(typeof input !== 'undefined')
+		this.input = input.split("");
 
 	do 
 	{
